@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImgItem from "./common/ImgItem";
+import ImgItem from "./ImgItem";
 
 const HeaderStyle =styled.div`
   height:60px;
@@ -53,10 +53,12 @@ const ButtonInfo = styled.div`
   color: var(--color-white);
   border: 1px solid var(--color-black_600);
   border-radius: 8px;
-  line-height: 40px;
   text-align: center;
   width: 70px;
   height: 40px;
+  &.p3{
+    line-height: 40px;
+  }
   cursor: pointer;
 `
 const ButtonNotice = styled.div`
@@ -164,7 +166,7 @@ const Header = ()=>{
           <ButtonInfo className='p3'>成人向</ButtonInfo>
           <ButtonNotice>
             <BellSvg>
-              <ImgItem svg='var(--svg-link-bell)' />
+              <ImgItem src='var(--svg-link-bell)' />
             </BellSvg>
           </ButtonNotice>
         </ButtonContainer375>
@@ -180,7 +182,7 @@ const Header = ()=>{
           </Info>
           <LanguageItem className='p3'>English</LanguageItem>
           <SearchSvg>
-            <ImgItem svg='var(--svg-search)' />
+            <ImgItem src='var(--svg-search)' />
           </SearchSvg>
           <UserStatus className='p3'>
             <div className='p3'>登入</div>
@@ -188,7 +190,7 @@ const Header = ()=>{
             <div className='p3'>註冊</div>
           </UserStatus>
           <MenuSvg>
-            <ImgItem svg='var(--svg-menu)'/>
+            <ImgItem src='var(--svg-menu)'/>
           </MenuSvg>
         </RowContainer>
       </HeaderContainer>

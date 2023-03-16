@@ -3,6 +3,12 @@ import headerLogo from "../../../src/assets/icons/header-logo.svg";
 import linkBell from "../../../src/assets/icons/link-bell.svg";
 import search from "../../../src/assets/icons/search.svg";
 import menu from "../../../src/assets/icons/menu.svg";
+import topImg from "../../../src/assets/images/top-img.png";
+import avatar from "../../../src/assets/images/avatar.png";
+import album04 from "../../../src/assets/images/album04.png";
+import scroll03 from "../../../src/assets/images/scroll03.png";
+import scroll04 from "../../../src/assets/images/scroll04.png";
+import scroll05 from "../../../src/assets/images/scroll05.png";
 
 export const GlobalStyle = createGlobalStyle`
 :root{
@@ -19,6 +25,12 @@ export const GlobalStyle = createGlobalStyle`
   --svg-link-bell:url(${linkBell});
   --svg-search:url(${search});
   --svg-menu:url(${menu});
+  --img-top-img:url(${topImg});
+  --img-avatar: url(${avatar});
+  --img-album-04: url(${album04});
+  --img-scroll-03:url(${scroll03});
+  --img-scroll-04:url(${scroll04});
+  --img-scroll-05:url(${scroll05});
 }
 
 
@@ -28,9 +40,9 @@ html,body {
   font-size: 16px;
   min-width: 375px;
   background-color: var(--color-black);
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) {
   }
-  @media (max-width: 1441px) {
+  @media (min-width: 1441px) {
   }
 }
 

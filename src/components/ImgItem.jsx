@@ -8,8 +8,8 @@ const Svg = styled.div`
   object-fit: contain;
   `
 
-const SvgItem = ({svg})=>{
-  return <Svg style={{backgroundImage:`${svg}`}}></Svg>
+const ImgItem = ({src})=>{
+  return <Svg style={{backgroundImage:`${src}`}}></Svg>
 }
 
-export default SvgItem;
+export default ImgItem;
