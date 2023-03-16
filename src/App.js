@@ -1,12 +1,13 @@
 import { GlobalStyle } from "./components/common/globalStyle";
 import { ResetStyle } from "./components/common/resetStyle";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div className="App">
       <ResetStyle />
       <GlobalStyle />
-      <h1>hello</h1>
+      <Main />
     </div>
   );
 }
