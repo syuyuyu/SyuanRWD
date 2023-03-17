@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import FeatureItem from "../items/FeatureItem";
 import ImgItem from "../items/ImgItem";
 
 // 1024 、 1441 未切
@@ -11,18 +10,23 @@ const PlayGameContainer = styled.div`
   position: relative;
   top: -92px;
   left: 0px;
+  @media (min-width: 1024px) {
+    width: 1024px;
+  }
 `
 const InfoContainer = styled.div`
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.29);
+  backdrop-filter: blur(3.5px);
 `
 
 const InfoWrapper = styled.div`
   height: 139px;
   display: flex;
-  background-image: linear-gradient(transparent ,var(--color-black) 70%);
   justify-content: space-between;
   align-items: center;
   padding: 18px 30px 19px 15px;
+
 `
 const AvatarImg = styled.div`
   height: 102px;
@@ -97,7 +101,6 @@ const PlayGame =()=>{
             <h3>勝利女神妮姬</h3>
             <Name className='p3'>GODDESS OF VICTORY: NIKKE</Name>
             <ButtonGame className='p3'>網頁遊戲</ButtonGame>
-
           </Info>
         </InfoWrapper>
         <Content className='p1'>第3人稱射擊手遊。集中了《天命之子》所有Live2D ver 3.3和2.5D PAPER FOLDING技術來實現生動的戰鬥動作。故事背景講述在被外星人淘汰的地球，代替人類上戰場的戰鬥少女的故事。

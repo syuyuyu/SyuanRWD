@@ -12,6 +12,7 @@ const IntroContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
   h3{
     color:white;
   }
@@ -51,6 +52,29 @@ const Links = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  `
+
+const Background = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+`
+
+
+const BackgroundContainer = styled.div`
+  width: 375px;
+  height: 375px;
+  &.background-top{
+    height: 35px;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, .6) 50% ,rgba(0, 0, 0, .1) );
+  }
+  &.background-down{
+    height: 300px;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, .1) 90% ,rgba(0, 0, 0, .8) );
+  }
 `
 
 
@@ -105,6 +129,28 @@ const Intro = ()=>{
         <LinkIcon src='var(--svg-link-camera)' style={{width:'16px',height:'16px'}}/>
         <LinkIcon src='var(--svg-link-discord)'style={{width:'18px',height:'18px'}}/>
       </Links>
+
+      <Background>
+        <BackgroundContainer className='background-top'>
+          <ImgItem src='var(--img-background-01)'/>
+        </BackgroundContainer>
+
+        <BackgroundContainer>
+          <ImgItem src='var(--img-background-01)'/>
+        </BackgroundContainer>
+
+        <BackgroundContainer>
+          <ImgItem src='var(--img-background-01)'/>
+        </BackgroundContainer>
+        <BackgroundContainer>
+          <ImgItem src='var(--img-background-01)'/>
+        </BackgroundContainer>
+
+        <BackgroundContainer className='background-down'>
+          <ImgItem src='var(--img-background-01)'/>
+        </BackgroundContainer>
+      </Background>
+
     </IntroContainer>
   )
 };

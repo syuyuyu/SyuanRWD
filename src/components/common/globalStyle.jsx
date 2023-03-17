@@ -24,11 +24,15 @@ import scroll04 from "../../../src/assets/images/scroll04.png";
 import scroll05 from "../../../src/assets/images/scroll05.png";
 import intro01 from "../../../src/assets/images/intro01.png";
 import intro02 from "../../../src/assets/images/intro02.png";
+import background from "../../../src/assets/images/background.png";
+import background01 from "../../../src/assets/images/background01.png";
+import backgroundTop from "../../../src/assets/images/background-top.png";
+import backgroundDown from "../../../src/assets/images/background-down.png";
 
 export const GlobalStyle = createGlobalStyle`
 :root{
   --color-white:#FFFFFF;
-  --color-black: #1E1E1E;
+  --color-black: #141414;
   --color-black_200:#C7C7C7;
   --color-black_300:#B0B0B0;
   --color-black_400:#9B9B9B;
@@ -62,6 +66,10 @@ export const GlobalStyle = createGlobalStyle`
   --img-scroll-05:url(${scroll05});
   --img-intro-01:url(${intro01});
   --img-intro-02:url(${intro02});
+  --img-background:url(${background});
+  --img-background-01:url(${background01});
+  --img-background-top:url(${backgroundTop});
+  --img-background-down:url(${backgroundDown});
 }
 
 
@@ -70,7 +78,7 @@ html,body {
   box-sizing: border-box;
   font-size: 16px;
   min-width: 375px;
-  background-color: var(--color-black);
+  background-color: rgba(0,0,0,1);
   @media (min-width: 1024px) {
   }
   @media (min-width: 1441px) {

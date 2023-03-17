@@ -3,8 +3,8 @@ import ImgItem from "./items/ImgItem";
 import LinkIcon from "./items/Links";
 
 const FooterContainer= styled.div`
-margin-top: 82px;
-position: relative;
+  margin-top: 82px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,20 +14,23 @@ position: relative;
 
 const CompanyInfo= styled.div`
   position: absolute;
-width: 100%;
-height: 100%;
-left: 65px;
-& .p4{
-  position: absolute;
-  color: var(--color-white);
-  opacity: 0.7;
-  bottom: 23px;
-}
+  width: 345px;
+  height: 100%;
+  top: 0px;
+  & .p4{
+    left: 71px;
+    position: absolute;
+    color: var(--color-white);
+    opacity: 0.7;
+    bottom: 23px;
+  }
 `
 const LogoContainer= styled.div`
+  position: absolute;
   width: 232px;
   height: 36px;
   top: 0;
+  left: 58px;
   `
 
 // const Content= styled.div`
@@ -40,7 +43,7 @@ const LogoContainer= styled.div`
 
 const DropDownContainer= styled.div`
   position: relative;
-  top:100px;
+  top:70px;
   display: inline-block;
 `
 const DropDownBtn= styled.div`
@@ -48,7 +51,7 @@ const DropDownBtn= styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
-opacity: 0.7;
+  opacity: 0.7;
 `
 const IconContainer= styled.div`
   width: 4.7px;
@@ -65,8 +68,8 @@ const IconContainer= styled.div`
 
 
 const Contact= styled.div`
-position: relative;
-top: 130px;
+  position: relative;
+  top: 105px;
   width: 107px;
   height: 29px;
   cursor: pointer;
@@ -81,10 +84,10 @@ top: 130px;
 
 
 const Links = styled.div`
-position: relative;
-top: 150px;
+  position: relative;
+  top: 142px;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
 `

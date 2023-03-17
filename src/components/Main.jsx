@@ -9,7 +9,7 @@ import Top from "./section/Top";
 const MainStyle=styled.div`
   margin: 0 auto;
   width: 375px;
-  height: 100vh;
+  height: 100%;
   position: relative;
   @media (min-width: 1024px) {
     width: 1024px;
@@ -18,6 +18,7 @@ const MainStyle=styled.div`
     width: 1441px
   }
 `
+
 
 
 const Main = ()=>{
