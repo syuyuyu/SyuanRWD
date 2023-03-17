@@ -4,7 +4,6 @@ import ImgItem from "./ImgItem";
 const TitleContainer = styled.div`
   color:var(--color-white);
   height: 34px;
-  width: 166px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +13,6 @@ const ArrowContainer = styled.div`
   width: 27px;
   height: 100%;
   display: flex;
-  margin: 0 auto;
   `
 
 const TitleItem = ({content})=>{

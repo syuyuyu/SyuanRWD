@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Header from "./Header";
 import Album from "./section/Album";
+import Environment from "./section/Environment";
 import Intro from "./section/Intro";
 import Top from "./section/Top";
 
@@ -26,6 +27,7 @@ const Main = ()=>{
       <Top />
       <Album />
       <Intro />
+      <Environment />
     </MainStyle>
     </>
   )
