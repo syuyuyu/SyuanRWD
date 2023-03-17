@@ -18,10 +18,17 @@ import arrowdown from "../../../src/assets/icons/arrow-down.svg";
 
 import topImg from "../../../src/assets/images/top-img.png";
 import avatar from "../../../src/assets/images/avatar.png";
+import album03 from "../../../src/assets/images/album03.png";
 import album04 from "../../../src/assets/images/album04.png";
+import album05 from "../../../src/assets/images/album05.png";
+import scroll01 from "../../../src/assets/images/scroll01.png";
+import scroll02 from "../../../src/assets/images/scroll02.png";
 import scroll03 from "../../../src/assets/images/scroll03.png";
 import scroll04 from "../../../src/assets/images/scroll04.png";
 import scroll05 from "../../../src/assets/images/scroll05.png";
+import scroll06 from "../../../src/assets/images/scroll06.png";
+import scroll07 from "../../../src/assets/images/scroll07.png";
+import scroll08 from "../../../src/assets/images/scroll08.png";
 import intro01 from "../../../src/assets/images/intro01.png";
 import intro02 from "../../../src/assets/images/intro02.png";
 import background from "../../../src/assets/images/background.png";
@@ -60,10 +67,17 @@ export const GlobalStyle = createGlobalStyle`
 
   --img-top-img:url(${topImg});
   --img-avatar: url(${avatar});
+  --img-album-03: url(${album03});
   --img-album-04: url(${album04});
+  --img-album-05: url(${album05});
+  --img-scroll-01:url(${scroll01});
+  --img-scroll-02:url(${scroll02});
   --img-scroll-03:url(${scroll03});
   --img-scroll-04:url(${scroll04});
   --img-scroll-05:url(${scroll05});
+  --img-scroll-06:url(${scroll06});
+  --img-scroll-07:url(${scroll07});
+  --img-scroll-08:url(${scroll08});
   --img-intro-01:url(${intro01});
   --img-intro-02:url(${intro02});
   --img-background:url(${background});

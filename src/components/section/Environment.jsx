@@ -9,6 +9,14 @@ const EnvContainer = styled.div`
     width: 345px;
     margin: 0 auto;
     color: var(--color-black_200);
+    @media (min-width: 1024px) {
+      width: 920px;
+      margin: 0 52px;
+    }
+  }
+  @media (min-width: 1024px) {
+    width: 920px;
+    margin: 104px auto 0 auto;
   }
 `
 

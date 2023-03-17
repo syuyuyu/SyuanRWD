@@ -8,6 +8,10 @@ const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+  
+  @media (min-width: 1024px) {
+    width: 920px;
+  }
 `
 const ArrowContainer = styled.div`
   width: 27px;

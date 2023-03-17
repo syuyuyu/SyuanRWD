@@ -18,6 +18,11 @@ const InfoContainer = styled.div`
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   background-color: rgba(0, 0, 0, 0.29);
   backdrop-filter: blur(3.5px);
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 100%;;
+    /* width: 1024px;; */
+  }
 `
 
 const InfoWrapper = styled.div`
@@ -26,11 +31,21 @@ const InfoWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 18px 30px 19px 15px;
+  @media (min-width: 1024px) {
+    margin: 38px 51px 0px 30px;
+    width: 330px;
+    height: 102px;
+    padding:0;
+  }
 
 `
 const AvatarImg = styled.div`
   height: 102px;
   width: 102px;
+  @media (min-width: 1024px) {
+    margin-right: 28px;
+  }
+
   `
 const Info = styled.div`
   h3{
@@ -62,13 +77,18 @@ const Content = styled.div`
   opacity: 0.8;
   padding: 0 15px;
   margin-bottom: 28px;
+  @media (min-width: 1024px) {
+    width: 337px;
+    margin-top: 29px;
+    padding: 0 ;
+
+  }
 `
 const ButtonNotice = styled.div`
   height: 44px;
   width: 345px;
   background-color: var(--color-black_900);
   color: var(--color-white);
-  /* line-height: 44px; */
   text-align: center;
   border-radius: 8px;
   display: flex;
@@ -83,7 +103,20 @@ const ButtonNotice = styled.div`
 const ButtonStart = styled.div`
   display: none;
   @media (min-width: 1024px){
+    position: absolute;
+    top: 49px;
+    right: 30px;
     display: block;
+    height: 80px;
+    width: 213px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
   }
 `
 

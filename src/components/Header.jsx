@@ -147,9 +147,13 @@ const MenuSvg = styled.div`
   height: 32px;
   width: 40px;
   cursor: pointer;
+  @media (min-width:1024px){
+    position: relative;
+    left: 30px;
+
+  }
 
   @media (min-width:1441px){
-    position: relative;
     left: 420px;
   }
 `

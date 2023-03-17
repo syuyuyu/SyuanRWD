@@ -16,6 +16,12 @@ const IntroContainer = styled.div`
   h3{
     color:white;
   }
+  @media (min-width: 1024px) {
+    width: 1024px;
+    top: 0px;
+
+  }
+
 `
 
 const Content = styled.div`
@@ -23,6 +29,9 @@ const Content = styled.div`
   width: 354px;
   margin-bottom: 39px;
   word-wrap:break-word;
+  @media (min-width: 1024px) {
+    width: 920px;
+  }
 `
 
 const ImgContainer = styled.div`
@@ -30,6 +39,10 @@ const ImgContainer = styled.div`
   height: 184px;
   margin-bottom: 39px;
   border-radius: 12px;
+  @media (min-width: 1024px) {
+    width: 918px;
+    height: 487px;
+  }
 `
 
 const Features = styled.div`
@@ -62,18 +75,42 @@ const Background = styled.div`
   left: 0px;
   z-index: -1;
 `
-
-
 const BackgroundContainer = styled.div`
   width: 375px;
   height: 375px;
+  @media (min-width: 1024px) {
+    width: 1024px;
+  }
   &.background-top{
     height: 35px;
     background: linear-gradient(to bottom,rgba(0, 0, 0, .6) 50% ,rgba(0, 0, 0, .1) );
+    @media (min-width: 1024px) {
+      width: 1024px;
+    }
   }
   &.background-down{
     height: 300px;
     background: linear-gradient(to bottom,rgba(0, 0, 0, .1) 90% ,rgba(0, 0, 0, .8) );
+    @media (min-width: 1024px) {
+      width: 1024px;
+    }
+  }
+`
+
+const ButtonStart = styled.div`
+  display: none;
+  @media (min-width: 1024px){
+    margin: 38px 0;
+    display: block;
+    height: 80px;
+    width: 678px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 `
 
@@ -108,6 +145,8 @@ const Intro = ()=>{
       <ImgContainer> {/* 第二張圖 */}
         <ImgItem src='var(--img-intro-02)'/>
       </ImgContainer>
+
+      <ButtonStart className='btn4'>免費遊玩</ButtonStart>
       
       <Features> {/* 特色按鈕 */}
         <FeatureItem content='網頁遊戲'/>
