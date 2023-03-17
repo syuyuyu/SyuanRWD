@@ -1,14 +1,29 @@
 import { createGlobalStyle } from "styled-components";
 import headerLogo from "../../../src/assets/icons/header-logo.svg";
 import linkBell from "../../../src/assets/icons/link-bell.svg";
+import linkEarth from "../../../src/assets/icons/link-earth.svg";
+import facebook from "../../../src/assets/icons/link-facebook.svg";
+import vector from "../../../src/assets/icons/link-vector.svg";
+import twitter from "../../../src/assets/icons/link-twitter.svg";
+import line from "../../../src/assets/icons/link-line.svg";
+import camera from "../../../src/assets/icons/link-camera01.svg";
+import discord from "../../../src/assets/icons/link-discord.svg";
+
+
 import search from "../../../src/assets/icons/search.svg";
 import menu from "../../../src/assets/icons/menu.svg";
+import arrowleft from "../../../src/assets/icons/arrow-left.svg";
+import arrowright from "../../../src/assets/icons/arrow-right.svg";
+
+
 import topImg from "../../../src/assets/images/top-img.png";
 import avatar from "../../../src/assets/images/avatar.png";
 import album04 from "../../../src/assets/images/album04.png";
 import scroll03 from "../../../src/assets/images/scroll03.png";
 import scroll04 from "../../../src/assets/images/scroll04.png";
 import scroll05 from "../../../src/assets/images/scroll05.png";
+import intro01 from "../../../src/assets/images/intro01.png";
+import intro02 from "../../../src/assets/images/intro02.png";
 
 export const GlobalStyle = createGlobalStyle`
 :root{
@@ -23,14 +38,26 @@ export const GlobalStyle = createGlobalStyle`
   --color-red: #DE280A;
   --svg-header-logo:url(${headerLogo});
   --svg-link-bell:url(${linkBell});
+  --svg-link-earth:url(${linkEarth});
+  --svg-link-facebook:url(${facebook});
+  --svg-link-vector:url(${vector});
+  --svg-link-twitter:url(${twitter});
+  --svg-link-line:url(${line});
+  --svg-link-camera:url(${camera});
+  --svg-link-discord:url(${discord});
+
   --svg-search:url(${search});
   --svg-menu:url(${menu});
+  --svg-arrow-left:url(${arrowleft});
+  --svg-arrow-right:url(${arrowright});
   --img-top-img:url(${topImg});
   --img-avatar: url(${avatar});
   --img-album-04: url(${album04});
   --img-scroll-03:url(${scroll03});
   --img-scroll-04:url(${scroll04});
   --img-scroll-05:url(${scroll05});
+  --img-intro-01:url(${intro01});
+  --img-intro-02:url(${intro02});
 }
 
 

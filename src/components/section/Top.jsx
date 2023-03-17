@@ -19,7 +19,6 @@ const Img = styled.div`
   object-fit: contain;
   background-position-x: 50%;
   background-image: var(--img-top-img);
-
   `
   const Top = ()=>{
     return (

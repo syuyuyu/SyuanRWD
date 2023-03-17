@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImgItem from "../ImgItem";
+import ImgItem from "../items/ImgItem";
 
 const AlbumContainer = styled.div`
   position: relative;
@@ -21,9 +21,10 @@ const Scroll = styled.div`
   display: flex;
   height: 74px;
   overflow: hidden;
-  opacity: 0.3;
   div{
     margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.3;
   }
   .target{
     opacity: 1;

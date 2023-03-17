@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Header from "./Header";
 import Album from "./section/Album";
+import Intro from "./section/Intro";
 import Top from "./section/Top";
 
 const MainStyle=styled.div`
@@ -24,6 +25,7 @@ const Main = ()=>{
       <Header />
       <Top />
       <Album />
+      <Intro />
     </MainStyle>
     </>
   )

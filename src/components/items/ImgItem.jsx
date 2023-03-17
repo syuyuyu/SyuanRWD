@@ -4,7 +4,7 @@ const Svg = styled.div`
   height: 100%;
   width: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
   object-fit: contain;
   `
 

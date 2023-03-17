@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImgItem from "./ImgItem";
+import ImgItem from "./items/ImgItem";
 
 const HeaderStyle =styled.div`
   height:60px;
