@@ -4,7 +4,7 @@ import TitleItem from "../items/TitleItem";
 const EnvContainer = styled.div`
   margin-top: 75px;
   width: 100%;
-  height: 100%;
+  height: auto;
   & .p1{
     width: 345px;
     margin: 0 auto;

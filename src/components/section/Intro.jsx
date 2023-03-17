@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import FeatureItem from "../items/FeatureItem";
 import ImgItem from "../items/ImgItem";
+import LinkIcon from "../items/Links";
 import TitleItem from "../items/TitleItem";
 
 const IntroContainer = styled.div`
@@ -51,23 +52,6 @@ const Links = styled.div`
   display: flex;
   justify-content: center;
 `
-const IconContainer = styled.div`
-  height: 26px;
-  width: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  cursor: pointer;
-  `
-const IconWrap = styled.div`
-  height: 17px;
-  width: 17px;
-  cursor: pointer;
-  opacity: 0.8;
-`
 
 
 const Intro = ()=>{
@@ -113,42 +97,13 @@ const Intro = ()=>{
       </Factory>
       
       <Links> {/* 連結排列 */}
-        <IconContainer>
-          <IconWrap>
-            <ImgItem src='var(--svg-link-earth)'/>
-          </IconWrap>
-        </IconContainer>
-        <IconContainer>
-          <IconWrap>
-            <ImgItem src='var(--svg-link-facebook)'/>
-          </IconWrap>
-        </IconContainer>
-        <IconContainer>
-          <IconWrap>
-            <ImgItem src='var(--svg-link-vector)'/>
-          </IconWrap>
-        </IconContainer>
-        <IconContainer>
-          <IconWrap>
-            <ImgItem src='var(--svg-link-twitter)'/>
-          </IconWrap>
-        </IconContainer>
-        <IconContainer>
-          <IconWrap>
-            <ImgItem src='var(--svg-link-line)'/>
-          </IconWrap>
-        </IconContainer>
-        <IconContainer>
-          <IconWrap style={{width:'16px',height:'16px'}}>
-            <ImgItem src='var(--svg-link-camera)'/>
-          </IconWrap>
-        </IconContainer>
-        <IconContainer>
-          <IconWrap style={{width:'18px',height:'18px'}}>
-            <ImgItem src='var(--svg-link-discord)'/>
-          </IconWrap>
-        </IconContainer>
-
+        <LinkIcon src='var(--svg-link-earth)'/>
+        <LinkIcon src='var(--svg-link-facebook)'/>
+        <LinkIcon src='var(--svg-link-vector)'/>
+        <LinkIcon src='var(--svg-link-twitter)'/>
+        <LinkIcon src='var(--svg-link-line)'/>
+        <LinkIcon src='var(--svg-link-camera)' style={{width:'16px',height:'16px'}}/>
+        <LinkIcon src='var(--svg-link-discord)'style={{width:'18px',height:'18px'}}/>
       </Links>
     </IntroContainer>
   )

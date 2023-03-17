@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import headerLogo from "../../../src/assets/icons/header-logo.svg";
+import footerLogo from "../../../src/assets/icons/footer-logo.svg";
 import linkBell from "../../../src/assets/icons/link-bell.svg";
 import linkEarth from "../../../src/assets/icons/link-earth.svg";
 import facebook from "../../../src/assets/icons/link-facebook.svg";
@@ -8,12 +9,11 @@ import twitter from "../../../src/assets/icons/link-twitter.svg";
 import line from "../../../src/assets/icons/link-line.svg";
 import camera from "../../../src/assets/icons/link-camera01.svg";
 import discord from "../../../src/assets/icons/link-discord.svg";
-
-
 import search from "../../../src/assets/icons/search.svg";
 import menu from "../../../src/assets/icons/menu.svg";
 import arrowleft from "../../../src/assets/icons/arrow-left.svg";
 import arrowright from "../../../src/assets/icons/arrow-right.svg";
+import arrowdown from "../../../src/assets/icons/arrow-down.svg";
 
 
 import topImg from "../../../src/assets/images/top-img.png";
@@ -34,9 +34,11 @@ export const GlobalStyle = createGlobalStyle`
   --color-black_400:#9B9B9B;
   --color-black_500:#868686;
   --color-black_600:#727272;
+  --color-black_800:#4B4B4B;
   --color-black_900:#393939;
   --color-red: #DE280A;
   --svg-header-logo:url(${headerLogo});
+  --svg-footer-logo:url(${footerLogo});
   --svg-link-bell:url(${linkBell});
   --svg-link-earth:url(${linkEarth});
   --svg-link-facebook:url(${facebook});
@@ -45,11 +47,13 @@ export const GlobalStyle = createGlobalStyle`
   --svg-link-line:url(${line});
   --svg-link-camera:url(${camera});
   --svg-link-discord:url(${discord});
-
   --svg-search:url(${search});
   --svg-menu:url(${menu});
   --svg-arrow-left:url(${arrowleft});
   --svg-arrow-right:url(${arrowright});
+  --svg-arrow-down:url(${arrowdown});
+
+
   --img-top-img:url(${topImg});
   --img-avatar: url(${avatar});
   --img-album-04: url(${album04});

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "./Footer";
 import Header from "./Header";
 import Album from "./section/Album";
 import Environment from "./section/Environment";
@@ -28,6 +29,7 @@ const Main = ()=>{
       <Album />
       <Intro />
       <Environment />
+      <Footer />
     </MainStyle>
     </>
   )
