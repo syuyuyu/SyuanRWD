@@ -120,15 +120,12 @@ const BackgroundContainer = styled.div`
 const BeckgroundImgItem = styled.div`
   height: 100%;
   width: 100%;
-    margin: 0 auto;
-
+  margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: contain;
   background-image: var(--img-background);
 `
-
-
 
 const ButtonStart = styled.div`
   display: none;
@@ -206,6 +203,7 @@ const Intro = ()=>{
         <LinkIcon src='var(--svg-link-discord)'style={{width:'18px',height:'18px'}}/>
       </Links>
 
+      {/* 背景圖 */}
       <Background>
         <BackgroundContainer className='background-top'>
           <ImgItem src='var(--img-background)'/>

@@ -8,7 +8,6 @@ const ImgContainer = styled.div`
   @media (min-width: 1024px){
     height: 370px;
     width: 1024px;
-
   }
   @media (min-width: 1441px){
     height: 520px;    
@@ -28,7 +27,6 @@ const Img = styled.div`
     width: 105%;
     background-size: cover;
     background-position-x: 0px;
-
   }
   `
   const Top = ()=>{

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 const FeatureContainer = styled.div`
   position: relative;
   height: 30px;
@@ -12,13 +11,11 @@ const FeatureContainer = styled.div`
   border: 1px solid var(--color-black_500);
   border-radius: 40px;
   cursor: pointer;
-
   `
-
+  
 const FeatureItem = ({content,claName})=>{
   return(
     <FeatureContainer  className={`p3 ${claName}`}>
-    {/* <FeatureContainer  className='p3'> */}
       {content}
     </FeatureContainer>
   )

@@ -95,8 +95,6 @@ const Album = ()=>{
         </ImgRow>
       </ImgContainer>
 
-
-
       <ImgController>
         <Scroll>
           <ImgScroll className='not-target'>
@@ -108,27 +106,21 @@ const Album = ()=>{
           <ImgScroll className='not-target'>
             <ImgItem src='var(--img-scroll-07)'/>
           </ImgScroll>
-
           <ImgScroll className='not-target'>
             <ImgItem src='var(--img-scroll-08)'/>
           </ImgScroll>
-
           <ImgScroll>
             <ImgItem src='var(--img-scroll-01)'/>
           </ImgScroll>
-
           <ImgScroll className='not-target'>
             <ImgItem src='var(--img-scroll-02)'/>
           </ImgScroll>
-
           <ImgScroll className='not-target'>
             <ImgItem src='var(--img-scroll-03)'/>
           </ImgScroll>
-
           <ImgScroll className='not-target'>
             <ImgItem src='var(--img-scroll-04)'/>
           </ImgScroll>
-
           <ImgScroll className='not-target'>
             <ImgItem src='var(--img-scroll-05)'/>
           </ImgScroll>
@@ -138,10 +130,8 @@ const Album = ()=>{
           <ImgScroll className='not-target'>
             <ImgItem src='var(--img-scroll-07)'/>
           </ImgScroll>
-
         </Scroll>
       </ImgController>
-
     </AlbumContainer>
   )
 };

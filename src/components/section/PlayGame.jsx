@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import ImgItem from "../items/ImgItem";
 
-// 1024 、 1441 未切
 
 const PlayGameContainer = styled.div`
   display: flex;
@@ -31,17 +30,6 @@ const InfoContainer = styled.div`
     width: 100%;
   }
   `
-  // const InfoContainer = styled.div`
-  //   @media (min-width: 1024px) {
-  //     display: flex;
-  //     align-items: center;
-  //     width: 100%;
-  //   }
-  //   @media (min-width: 1441px) {
-  //     /* width: 883px; */
-  //   }
-  // `
-
 
 const InfoWrapper = styled.div`
   height: 139px;
@@ -56,10 +44,8 @@ const InfoWrapper = styled.div`
     padding:0;
   }
   @media (min-width: 1441px) {
-    /* width: 1146px */
     margin-left: 147px;
   }
-
 `
 const AvatarImg = styled.div`
   height: 102px;
@@ -67,7 +53,6 @@ const AvatarImg = styled.div`
   @media (min-width: 1024px) {
     margin-right: 28px;
   }
-
   `
 const Info = styled.div`
   h3{
@@ -93,7 +78,6 @@ const ButtonGame = styled.div`
   cursor: pointer;
 `
 
-
 const Content = styled.div`
   color: var(--color-white);
   opacity: 0.8;
@@ -106,7 +90,6 @@ const Content = styled.div`
   }
   @media (min-width: 1441px) {
     width: 502px;
-    /* height: 72px; */
   }
 `
 const ButtonNotice = styled.div`
@@ -153,7 +136,6 @@ const PlayGame =()=>{
   return (
     <PlayGameContainer>
 
-        {/* <InfoBlur> */}
       <InfoContainer>
           <InfoWrapper>
             <AvatarImg>
@@ -167,9 +149,7 @@ const PlayGame =()=>{
           </InfoWrapper>
           <Content className='p1'>第3人稱射擊手遊。集中了《天命之子》所有Live2D ver 3.3和2.5D PAPER FOLDING技術來實現生動的戰鬥動作。故事背景講述在被外星人淘汰的地球，代替人類上戰場的戰鬥少女的故事。
           </Content>
-
       </InfoContainer>
-        {/* </InfoBlur> */}
 
       <ButtonNotice className='p1'>僅可在PC上遊玩</ButtonNotice>
       <ButtonStart className='btn4'>開始遊戲</ButtonStart>

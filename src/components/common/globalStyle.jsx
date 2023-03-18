@@ -64,7 +64,6 @@ export const GlobalStyle = createGlobalStyle`
   --svg-arrow-right:url(${arrowright});
   --svg-arrow-down:url(${arrowdown});
 
-
   --img-top-img:url(${topImg});
   --img-avatar: url(${avatar});
   --img-album-03: url(${album03});
@@ -85,8 +84,6 @@ export const GlobalStyle = createGlobalStyle`
   --img-background-top:url(${backgroundTop});
   --img-background-down:url(${backgroundDown});
 }
-
-
 html,body {
   font-family: Helvetica;
   box-sizing: border-box;
@@ -98,11 +95,10 @@ html,body {
   @media (min-width: 1441px) {
   }
 }
-
 .p1{
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400; /*or 300*/
+  font-weight: 400;
   letter-spacing: 0.25px;
 }
 .p3{
@@ -117,8 +113,6 @@ html,body {
   font-weight: 300;
   letter-spacing: 0.8px;
 }
-
-
 .btn3{
   font-size: 16px;
   line-height: 19px;
@@ -131,15 +125,12 @@ html,body {
   font-weight: 700;
   letter-spacing: 1.25px;
 }
-
-
 h3{
     font-weight: bold;
     font-size: 28px;
     line-height: 34px;
     font-weight: 700;
 }
-
 .show-1441{
   display: none;
   @media (min-width: 1441px) {
@@ -152,15 +143,12 @@ h3{
     display: block;
   }
 }
-
-
 .no-show-1441{
   display: block;
   @media (min-width: 1441px) {
     display: none;
   }
 };
-
 `;
 
 

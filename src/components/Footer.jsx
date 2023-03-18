@@ -21,7 +21,6 @@ const FooterContainer= styled.div`
   @media (min-width: 1441px) {
     width: 1440px;
     margin-top: 149px;
-
   }
 `
 
@@ -43,7 +42,6 @@ const CompanyInfo= styled.div`
     margin-right: 342px;
     margin-left: 47px;
   }
-  
   & .p4{
     position: absolute;
     left: 71px;
@@ -76,31 +74,19 @@ const LogoContainer= styled.div`
     margin-right: 90px;
     width: 100%;
   }
-  `
-
-// const Content= styled.div`
-// position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: space-between;
-// `
-
+`
 const DropDownContainer= styled.div`
   position: relative;
   top:70px;
   display: inline-block;
-  /* width: 100%; */
   @media (min-width: 1024px) {
     position: absolute;
     top:24px;
     left: 920px;
-    /* width: 1024px; */
   }
   @media (min-width: 1441px) {
     left: unset;
     right: 30px;
-
   }
 `
 const DropDownBtn= styled.div`
@@ -114,29 +100,21 @@ const IconContainer= styled.div`
   width: 7px;
   height: 8px;
   margin-left: 8px;
-
   &::after{
-  @media (min-width: 1024px) {
-   content: '';
-   position: absolute;
-   border: 1px dashed var(--color-white);
-   opacity: 0.6;
-   width: 1px;
-   height: 32px;
-   top: -10px;
-   left: -31px;
+    @media (min-width: 1024px) {
+    content: '';
+    position: absolute;
+    border: 1px dashed var(--color-white);
+    opacity: 0.6;
+    width: 1px;
+    height: 32px;
+    top: -10px;
+    left: -31px;
+    }
   }
-  }
-
 `
-
-// 下拉選單
-// const DropDownContent= styled.div`
-//   display: none;
-//   position: absolute;
-//   z-index: 1;
-// `
-
+//下拉選單
+// const DropDownContent= styled.div``
 
 const Contact= styled.div`
   position: relative;
@@ -151,9 +129,7 @@ const Contact= styled.div`
   }
   @media (min-width: 1441px) {
     margin: 0 18px 0 0 ;
-
   }
-
   & .p3{
     width: 107px;
     line-height: 29px;
@@ -161,15 +137,10 @@ const Contact= styled.div`
     color: var(--color-white);
     opacity: 0.7;
   }
-
-
 `
-
-
 const Links = styled.div`
   position: relative;
   top: 142px;
-  /* width: 100%; */
   height: auto;
   display: flex;
   justify-content: center;
@@ -178,7 +149,6 @@ const Links = styled.div`
     left: -5px;
   }
 `
-
 
 const Footer = ()=>{
   return(
@@ -198,21 +168,17 @@ const Footer = ()=>{
           </IconContainer>
         </DropDownBtn>
         {/* 下拉選單 */}
-        {/* <DropDownContent> */}
+        {/* {<DropDownContent>} */}
           {/* <a href="#">下拉選單內容</a> */}
-        {/* </DropDownContent> */}
+        {/* {</DropDownContent>} */}
       </DropDownContainer>
-
-
+      {/* //聯繫按鈕 */}
       <Contact className=" no-show-1441">
         <div className="p3">聯繫客服</div>
       </Contact>
-      
       <Contact className="show-1441">
         <div className="p3">contact us</div>
       </Contact>
-
-
 
       <Links>
         <LinkIcon src='var(--svg-link-facebook)'/>
@@ -222,10 +188,6 @@ const Footer = ()=>{
         <LinkIcon src='var(--svg-link-camera)' style={{width:'16px',height:'16px'}}/>
         <LinkIcon src='var(--svg-link-discord)'style={{width:'18px',height:'18px'}}/>
       </Links>
-
-
-
-
     </FooterContainer>
   )
 };

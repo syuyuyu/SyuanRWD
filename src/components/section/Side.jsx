@@ -8,7 +8,6 @@ const SideContainer = styled.div`
   justify-content: space-between;
   width: 151px;
   height: 142.57px;
-  /* background-color: orange; */
   position: fixed;
   right: 0 ;
   top: 530px;
@@ -16,7 +15,6 @@ const SideContainer = styled.div`
 `
 const Content = styled.div`
   color: var(--color-white);
-
   &::after{
     content: '';
     position: absolute;
@@ -27,28 +25,22 @@ const Content = styled.div`
     margin-top: 8px;
     right: 0;
   }
-    
-    &.no-target{
-      opacity: 0.7;
-    }
-
+  &.no-target{
+    opacity: 0.7;
+  }
 `
 
 const ButtonStart = styled.div`
-    /* display: block; */
-    /* position: absolute; */
-    /* top: 49px; */
-    right: 27px;
-    width: 124px;
-    height: 46.57px;
-    background-color: var(--color-red);
-    color: var(--color-white);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
+  right: 27px;
+  width: 124px;
+  height: 46.57px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 `
 
 const Side = ()=>{

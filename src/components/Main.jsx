@@ -20,11 +20,8 @@ const MainStyle=styled.div`
   }
 `
 
-
-
 const Main = ()=>{
   return(
-    <>
     <MainStyle>
       <Header />
       <Top />
@@ -34,9 +31,7 @@ const Main = ()=>{
       <Footer />
       <Side />
     </MainStyle>
-    </>
   )
-
 }
 
 export default Main;
