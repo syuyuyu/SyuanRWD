@@ -13,10 +13,18 @@ const EnvContainer = styled.div`
       width: 920px;
       margin: 0 52px;
     }
+    @media (min-width: 1441px) {
+      margin: 0 0;
+      width: 680px;
+    }
   }
   @media (min-width: 1024px) {
     width: 920px;
     margin: 104px auto 0 auto;
+  }
+  @media (min-width: 1441px) {
+    width: 680px;
+    margin: 175px auto 0 auto;
   }
 `
 

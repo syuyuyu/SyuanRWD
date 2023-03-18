@@ -12,6 +12,9 @@ const TitleContainer = styled.div`
   @media (min-width: 1024px) {
     width: 920px;
   }
+  @media (min-width: 1441px) {
+    width: 680px;
+  }
 `
 const ArrowContainer = styled.div`
   width: 27px;

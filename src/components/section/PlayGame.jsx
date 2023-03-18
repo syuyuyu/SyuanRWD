@@ -13,17 +13,35 @@ const PlayGameContainer = styled.div`
   @media (min-width: 1024px) {
     width: 1024px;
   }
+  @media (min-width: 1441px) {
+    width: 1440px
+  }
 `
 const InfoContainer = styled.div`
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   background-color: rgba(0, 0, 0, 0.29);
   backdrop-filter: blur(3.5px);
   @media (min-width: 1024px) {
+    width: 100%;
     display: flex;
-    width: 100%;;
-    /* width: 1024px;; */
+    align-items: center;
   }
-`
+  @media (min-width: 1441px) {
+    width: 1440px;
+    width: 100%;
+  }
+  `
+  // const InfoContainer = styled.div`
+  //   @media (min-width: 1024px) {
+  //     display: flex;
+  //     align-items: center;
+  //     width: 100%;
+  //   }
+  //   @media (min-width: 1441px) {
+  //     /* width: 883px; */
+  //   }
+  // `
+
 
 const InfoWrapper = styled.div`
   height: 139px;
@@ -36,6 +54,10 @@ const InfoWrapper = styled.div`
     width: 330px;
     height: 102px;
     padding:0;
+  }
+  @media (min-width: 1441px) {
+    /* width: 1146px */
+    margin-left: 147px;
   }
 
 `
@@ -81,7 +103,10 @@ const Content = styled.div`
     width: 337px;
     margin-top: 29px;
     padding: 0 ;
-
+  }
+  @media (min-width: 1441px) {
+    width: 502px;
+    /* height: 72px; */
   }
 `
 const ButtonNotice = styled.div`
@@ -116,6 +141,9 @@ const ButtonStart = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+  @media (min-width: 1441px) {
+    right: 147px;
 
   }
 `
@@ -125,20 +153,23 @@ const PlayGame =()=>{
   return (
     <PlayGameContainer>
 
+        {/* <InfoBlur> */}
       <InfoContainer>
-        <InfoWrapper>
-          <AvatarImg>
-            <ImgItem src='var(--img-avatar)'/>
-          </AvatarImg>
-          <Info>
-            <h3>勝利女神妮姬</h3>
-            <Name className='p3'>GODDESS OF VICTORY: NIKKE</Name>
-            <ButtonGame className='p3'>網頁遊戲</ButtonGame>
-          </Info>
-        </InfoWrapper>
-        <Content className='p1'>第3人稱射擊手遊。集中了《天命之子》所有Live2D ver 3.3和2.5D PAPER FOLDING技術來實現生動的戰鬥動作。故事背景講述在被外星人淘汰的地球，代替人類上戰場的戰鬥少女的故事。
-        </Content>
+          <InfoWrapper>
+            <AvatarImg>
+              <ImgItem src='var(--img-avatar)'/>
+            </AvatarImg>
+            <Info>
+              <h3>勝利女神妮姬</h3>
+              <Name className='p3'>GODDESS OF VICTORY: NIKKE</Name>
+              <ButtonGame className='p3'>網頁遊戲</ButtonGame>
+            </Info>
+          </InfoWrapper>
+          <Content className='p1'>第3人稱射擊手遊。集中了《天命之子》所有Live2D ver 3.3和2.5D PAPER FOLDING技術來實現生動的戰鬥動作。故事背景講述在被外星人淘汰的地球，代替人類上戰場的戰鬥少女的故事。
+          </Content>
+
       </InfoContainer>
+        {/* </InfoBlur> */}
 
       <ButtonNotice className='p1'>僅可在PC上遊玩</ButtonNotice>
       <ButtonStart className='btn4'>開始遊戲</ButtonStart>

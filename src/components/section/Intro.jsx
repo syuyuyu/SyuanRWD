@@ -19,7 +19,10 @@ const IntroContainer = styled.div`
   @media (min-width: 1024px) {
     width: 1024px;
     top: 0px;
-
+  }
+  @media (min-width: 1441px) {
+    width: 680px;
+    margin: 0 auto;
   }
 
 `
@@ -32,6 +35,9 @@ const Content = styled.div`
   @media (min-width: 1024px) {
     width: 920px;
   }
+  @media (min-width: 1441px) {
+    width: 680px;
+  }
 `
 
 const ImgContainer = styled.div`
@@ -43,6 +49,10 @@ const ImgContainer = styled.div`
     width: 918px;
     height: 487px;
   }
+  @media (min-width: 1441px) {
+    width: 677px;
+    height: 359px;
+  }
 `
 
 const Features = styled.div`
@@ -51,7 +61,8 @@ const Features = styled.div`
   margin-bottom: 38px;
   div:not(:first-child){
     margin-left: 10px;
-  }
+  };
+
 `
 
 const Factory = styled.div`
@@ -96,6 +107,15 @@ const BackgroundContainer = styled.div`
     }
   }
 `
+// const BeckgroundImgItem = styled.div`
+//   height: 100%;
+//   width: 100%;
+//   background-size: cover;
+//   background-repeat: round;
+//   object-fit: contain;
+// `
+
+
 
 const ButtonStart = styled.div`
   display: none;
@@ -111,6 +131,9 @@ const ButtonStart = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+  @media (min-width: 1441px) {
+    width: 680px;
   }
 `
 
@@ -153,6 +176,7 @@ const Intro = ()=>{
         <FeatureItem content='射擊遊戲'/>
         <FeatureItem content='角色扮演'/>
         <FeatureItem content='卡牌'/>
+        <FeatureItem content='二次元' claName='show-1441'/>
       </Features>
 
       <Factory className="p1">
@@ -171,22 +195,22 @@ const Intro = ()=>{
 
       <Background>
         <BackgroundContainer className='background-top'>
-          <ImgItem src='var(--img-background-01)'/>
+          <ImgItem src='var(--img-background)'/>
         </BackgroundContainer>
 
         <BackgroundContainer>
-          <ImgItem src='var(--img-background-01)'/>
+          <ImgItem src='var(--img-background)'/>
         </BackgroundContainer>
 
         <BackgroundContainer>
-          <ImgItem src='var(--img-background-01)'/>
+          <ImgItem src='var(--img-background)'/>
         </BackgroundContainer>
         <BackgroundContainer>
-          <ImgItem src='var(--img-background-01)'/>
+          <ImgItem src='var(--img-background)'/>
         </BackgroundContainer>
 
         <BackgroundContainer className='background-down'>
-          <ImgItem src='var(--img-background-01)'/>
+          <ImgItem src='var(--img-background)'/>
         </BackgroundContainer>
       </Background>
 

@@ -12,6 +12,7 @@ const ImgContainer = styled.div`
   }
   @media (min-width: 1441px){
     height: 520px;    
+    width: 1440px;
   }
   `
 const Img = styled.div`

@@ -140,6 +140,19 @@ h3{
     font-weight: 700;
 }
 
+.show-1441{
+  display: none;
+  @media (min-width: 1441px) {
+    display: block;
+  }
+}
+.no-show-1441{
+  display: block;
+  @media (min-width: 1441px) {
+    display: none;
+  }
+};
+
 `;
 
 

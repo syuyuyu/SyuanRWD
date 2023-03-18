@@ -18,6 +18,11 @@ const FooterContainer= styled.div`
     flex-direction: row;
     align-items: center;
   }
+  @media (min-width: 1441px) {
+    width: 1440px;
+    margin-top: 149px;
+
+  }
 `
 
 const CompanyInfo= styled.div`
@@ -33,6 +38,12 @@ const CompanyInfo= styled.div`
     margin-left: 31px;
     margin-right: 16px;
   }
+  @media (min-width: 1441px) {
+    width: 533px;
+    margin-right: 342px;
+    margin-left: 47px;
+  }
+  
   & .p4{
     position: absolute;
     left: 71px;
@@ -44,8 +55,9 @@ const CompanyInfo= styled.div`
       left: 0px;
       bottom: 0;
       width: 211px;
-      /* margin-right: 16px; */
-      /* width: 100%; */
+    }
+    @media (min-width: 1441px) {
+      width: 100%;
     }
   }
 `
@@ -59,6 +71,10 @@ const LogoContainer= styled.div`
     position: relative;
     left: 0px;
     margin-right: 15px;
+  }
+  @media (min-width: 1441px) {
+    margin-right: 90px;
+    width: 100%;
   }
   `
 
@@ -74,12 +90,17 @@ const DropDownContainer= styled.div`
   position: relative;
   top:70px;
   display: inline-block;
+  /* width: 100%; */
   @media (min-width: 1024px) {
     position: absolute;
-    bottom:0px;
-    right: 0px;
-    width: 1024px;
-    display: none;
+    top:24px;
+    left: 920px;
+    /* width: 1024px; */
+  }
+  @media (min-width: 1441px) {
+    left: unset;
+    right: 30px;
+
   }
 `
 const DropDownBtn= styled.div`
@@ -88,12 +109,26 @@ const DropDownBtn= styled.div`
   display: flex;
   align-items: center;
   opacity: 0.7;
-
 `
 const IconContainer= styled.div`
-  width: 4.7px;
+  width: 7px;
   height: 8px;
   margin-left: 8px;
+  & ::after{
+  @media (min-width: 1024px) {
+   content: '';
+   position: absolute;
+   border: 1px dashed var(--color-white);
+   opacity: 0.6;
+   width: 1px;
+   height: 32px;
+   top: -10px;
+   left: -31px;
+   @media (min-width: 1441px) {
+     /* display: none; */
+   }
+  }
+  }
 
 `
 
@@ -110,24 +145,26 @@ const Contact= styled.div`
   top: 105px;
   height: 29px;
   border: 1px solid var(--color-black_800);
+  margin: 0 18px 0 16px;
   text-align: center;
   cursor: pointer;
-  margin: 0 18px 0 16px;
   @media (min-width: 1024px) {
     top: 0px;
-    
   }
+  @media (min-width: 1441px) {
+    margin: 0 18px 0 0 ;
+
+  }
+
   & .p3{
     width: 107px;
     line-height: 29px;
     text-align: center;
     color: var(--color-white);
     opacity: 0.7;
-    @media (min-width: 1024px) {
-      /* line-height: auto; */
-      /* margin: 8px 28px 7px 28px; */
   }
-  }
+
+
 `
 
 
@@ -140,6 +177,7 @@ const Links = styled.div`
   justify-content: center;
   @media (min-width: 1024px) {
     top: 0px;
+    left: -5px;
   }
 `
 
@@ -156,22 +194,27 @@ const Footer = ()=>{
 
       <DropDownContainer>
         <DropDownBtn>
-          <div className="p4">一般向遊戲 </div>
+          <div className="p4" style={{fontWeight:700}}>一般向遊戲 </div>
           <IconContainer>
             <ImgItem src='var(--svg-arrow-down)'/>
           </IconContainer>
         </DropDownBtn>
-
         {/* 下拉選單 */}
         {/* <DropDownContent> */}
           {/* <a href="#">下拉選單內容</a> */}
         {/* </DropDownContent> */}
-
       </DropDownContainer>
 
-      <Contact>
+
+      <Contact className=" no-show-1441">
         <div className="p3">聯繫客服</div>
       </Contact>
+      
+      <Contact className="show-1441">
+        <div className="p3">contact us</div>
+      </Contact>
+
+
 
       <Links>
         <LinkIcon src='var(--svg-link-facebook)'/>

@@ -8,6 +8,9 @@ const HeaderStyle =styled.div`
   @media (min-width: 1024px){
     height:56px;
   }
+  @media (min-width: 1441px) {
+    width: 1441px
+  }
   `
 const HeaderContainer = styled.div`
   position: relative;
@@ -33,13 +36,12 @@ const HeaderLogo = styled.div`
   object-fit: contain;
   cursor: pointer;
   @media (min-width: 1024px){
-    margin: 0 30px;
+    margin-right: 30px;
   }
-  @media (min-width:1441px){
-    margin: 0;
-    left: 30px;
+  @media (min-width: 1441px){
+    margin-right: 0px;
+    margin-left: 30px;
   }
-
 `
 
 //@media min width 375
@@ -82,12 +84,15 @@ const BellSvg = styled.div`
 
 //media min width 1024
 const RowContainer = styled.div`
+/* width: 100%; */
   display: none;
   @media (min-width:1024px){
     display: flex;
     align-items: center;
   }
-
+  @media (min-width: 1441px) {
+    position: relative;
+  }
 `
 const Info = styled.div`
   display: flex;
@@ -97,8 +102,12 @@ const Info = styled.div`
     cursor: pointer;
   }
   @media (min-width:1441px){
+    margin: unset;
     position: relative;
     left: 88px;
+    div{
+    margin: unset;
+    }
     div:not(:first-child){
       margin-left: 40px;
     }
@@ -110,8 +119,9 @@ const LanguageItem = styled.div`
     width: 45px;
     height: 14px;
     color: var(--color-white);
+    opacity: 0.7;
     position: relative;
-    left: 243px;
+    left: 333px;
   }
   `
 
@@ -124,7 +134,7 @@ const SearchSvg = styled.div`
   @media (min-width:1441px){
     margin: 0px;
     position: relative;
-    left: 272px;
+    left: 358px;
   }
 `
 
@@ -133,14 +143,34 @@ const UserStatus = styled.div`
   color: var(--color-white);
   width: 98px;
   cursor: pointer;
+  opacity: 0.8;
   div:not(:first-child){
     margin-left:9px;
+  }
+  & ::after{
+  @media (min-width: 1024px) {
+   content: '';
+   position: absolute;
+   border: 1px solid var(--color-white);
+   opacity: 0.12;
+   width: 1px;
+   height: 60.42px;
+   top: -2.5px;
+   right: 95px;
+   transform: rotate(24.44deg);
+   cursor: default;
+  }
+  @media (min-width: 1441px) {
+   top: -23px;
+   right: -15px;
+  }
+
   }
 
   @media (min-width:1441px){
     position: relative;
     /* left: 338px; */
-    left: 316px;
+    left: 398px;
   }
 `
 const MenuSvg = styled.div`
@@ -154,7 +184,7 @@ const MenuSvg = styled.div`
   }
 
   @media (min-width:1441px){
-    left: 420px;
+    left: 460px;
   }
 `
 

@@ -15,7 +15,7 @@ const MainStyle=styled.div`
     width: 1024px;
   }
   @media (min-width: 1441px) {
-    width: 1441px
+    width: 1441px;
   }
 `
 

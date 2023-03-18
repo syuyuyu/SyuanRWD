@@ -9,6 +9,10 @@ const AlbumContainer = styled.div`
     overflow: hidden;
     margin-bottom: 80px;
   }
+  @media (min-width: 1441px) {
+    width: 1146px;
+    margin: 0 auto 121px auto;
+  }
 `
 const ImgContainer = styled.div`
   width: 100%;
@@ -18,6 +22,10 @@ const ImgContainer = styled.div`
     width: 2400px;
     position: relative;
     left: -50%;
+    transform: translateX(5%);
+  }
+  @media (min-width: 1441px) {
+    left: -450px;
     transform: translateX(5%);
   }
 `
@@ -45,6 +53,10 @@ const ImgController = styled.div`
   height: 100%;
   margin-top: 18px;
   overflow: hidden;
+  @media (min-width: 1441px) {
+    width: 1012px;
+    margin: 18px auto 0 auto;
+  }
 `
 const Scroll = styled.div`
   display: flex;

@@ -12,11 +12,13 @@ const FeatureContainer = styled.div`
   border: 1px solid var(--color-black_500);
   border-radius: 40px;
   cursor: pointer;
+
   `
 
-const FeatureItem = ({content})=>{
+const FeatureItem = ({content,claName})=>{
   return(
-    <FeatureContainer  className='p3'>
+    <FeatureContainer  className={`p3 ${claName}`}>
+    {/* <FeatureContainer  className='p3'> */}
       {content}
     </FeatureContainer>
   )
