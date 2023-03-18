@@ -146,6 +146,14 @@ h3{
     display: block;
   }
 }
+.show-1024{
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+
 .no-show-1441{
   display: block;
   @media (min-width: 1441px) {

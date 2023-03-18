@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TitleItem from "../items/TitleItem";
 
 const EnvContainer = styled.div`
+z-index: 2;
   margin-top: 75px;
   width: 100%;
   height: auto;

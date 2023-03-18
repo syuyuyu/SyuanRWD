@@ -92,12 +92,19 @@ const BackgroundContainer = styled.div`
   @media (min-width: 1024px) {
     width: 1024px;
   }
+  @media (min-width: 1441px) {
+    width: 100%;
+    margin: 0 auto;
+  }
   &.background-top{
     height: 35px;
     background: linear-gradient(to bottom,rgba(0, 0, 0, .6) 50% ,rgba(0, 0, 0, .1) );
     @media (min-width: 1024px) {
       width: 1024px;
     }
+  @media (min-width: 1441px) {
+    width: 100%;
+  }
   }
   &.background-down{
     height: 300px;
@@ -105,15 +112,21 @@ const BackgroundContainer = styled.div`
     @media (min-width: 1024px) {
       width: 1024px;
     }
+  @media (min-width: 1441px) {
+    width: 100%;
+  }
   }
 `
-// const BeckgroundImgItem = styled.div`
-//   height: 100%;
-//   width: 100%;
-//   background-size: cover;
-//   background-repeat: round;
-//   object-fit: contain;
-// `
+const BeckgroundImgItem = styled.div`
+  height: 100%;
+  width: 100%;
+    margin: 0 auto;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-image: var(--img-background);
+`
 
 
 
@@ -199,18 +212,21 @@ const Intro = ()=>{
         </BackgroundContainer>
 
         <BackgroundContainer>
-          <ImgItem src='var(--img-background)'/>
+          <BeckgroundImgItem src='var(--img-background)'/>
         </BackgroundContainer>
 
         <BackgroundContainer>
-          <ImgItem src='var(--img-background)'/>
+          <BeckgroundImgItem src='var(--img-background)'/>
         </BackgroundContainer>
         <BackgroundContainer>
-          <ImgItem src='var(--img-background)'/>
+          <BeckgroundImgItem src='var(--img-background)'/>
+        </BackgroundContainer>
+        <BackgroundContainer className="show-1024">
+          <BeckgroundImgItem src='var(--img-background)'/>
         </BackgroundContainer>
 
         <BackgroundContainer className='background-down'>
-          <ImgItem src='var(--img-background)'/>
+          <BeckgroundImgItem src='var(--img-background)'/>
         </BackgroundContainer>
       </Background>
 

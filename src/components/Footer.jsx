@@ -114,7 +114,8 @@ const IconContainer= styled.div`
   width: 7px;
   height: 8px;
   margin-left: 8px;
-  & ::after{
+
+  &::after{
   @media (min-width: 1024px) {
    content: '';
    position: absolute;
@@ -124,9 +125,6 @@ const IconContainer= styled.div`
    height: 32px;
    top: -10px;
    left: -31px;
-   @media (min-width: 1441px) {
-     /* display: none; */
-   }
   }
   }
 

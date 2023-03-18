@@ -4,6 +4,7 @@ import Header from "./Header";
 import Album from "./section/Album";
 import Environment from "./section/Environment";
 import Intro from "./section/Intro";
+import Side from "./section/Side";
 import Top from "./section/Top";
 
 const MainStyle=styled.div`
@@ -31,6 +32,7 @@ const Main = ()=>{
       <Intro />
       <Environment />
       <Footer />
+      <Side />
     </MainStyle>
     </>
   )
